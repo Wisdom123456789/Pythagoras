@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@keyframes changes {
+    0% { background-image: url("1.jpg");}
+    50% { background-image: url("2.jpg");}
+    70%{ background-image: url("3.jpg");}
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+nav .home{
+    text-decoration: underline;
+}
+nav{
+    display: flex;
+    width: 600px;
+    justify-content: space-evenly;
+}
+.pythagoras_logo img{
+    height: 70px;
+}
+.icons{
+    display: flex;
+    width: 80px;
+    height: fit-content;
+    justify-content: space-around;
+    align-items: center;
+}
+main{
+    background-image: url("1.jpg");
+    animation: changes 3s  infinite ;
+    background-position: center;
+    height: 120vh;
+    width: 100%;
+}
+@keyframes move{
+    from{
+        left:  -90%;
+    }
+    to{
+        left: 0;
+    }
+}
+.main_content{
+    height: 400px;
+    width: 400px;
+    border-radius: 0 50% 50% 0;
+    position: absolute;
+    margin: 300px 0 0 0;
+    background-color: rgb(23,48,88);
+    animation: move 4s ease;
+}
+.main_content button{
+    width: 150px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: rgb(146,205,0);
+    color: white;
+    border-radius: 20px;
+}
+.main_content button:hover{
+    background-color: black;
+}
+.main_content p{
+    color: white;
+}
+.second{
+    height: 600px;
+    width: 100%;
+}
+.second h1{
+    color: rgb(23,48,88);
+}
+.second h3{
+    color: black;
+}
+.second_text{
+    text-align: center;
+    padding: 100px 0 0 0;
+}
+.six{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 140vh;
+    align-items: center;
+    background-color: white;
+}
+.six_content{
+    width: 500px;
+}
+form{
+    width: 600px;
+}
+form input{
+    height: 70px;
+    display: block;
+    width: 550px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    background-color: rgb(229,229,229);
+}
+.four{
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+}
+@keyframes image{
+    from{
+        transform: rotate(30deg);
+        opacity: 0;
+    }
+    to{
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+.four h1{
+    color: rgb(23,48,88);
+}
+.four h3{
+    color: black;
+}
+.four_one img{
+    border-radius: 100%;
+    animation: image;
+    animation-duration: 4s;
+    animation-delay: 5s;
+    animation-direction: alternate;
+}
+.four_two button{
+    height: 60px;
+    color: white;
+    width: 200px;
+    border: none;
+    outline: none;
+    margin: 40px 0 0 0;
+    border-radius: 30px;
+    background-color: rgb(146,205,0);
+}
+.four_two button:hover{
+    background-color: black;
+}
+footer{
+    height: 120vh;
+    width: 100%;
+    background-color: rgb(23,48,88);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer_image img{
+    border-radius: 100%;
+}
+.footer_text_general{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+footer p,h1,h3,a,td{
+    color: white;
+}
+.site td{
+    padding: 10px 40px;
+}
+.circle_box{
+    margin: 140px 0 0 0;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.circle_one, .circle_two, .circle_three{
+    height: 400px;
+    width: 400px;
+    box-shadow: 2px 2px 2px 1px black;
+    overflow: hidden;
+    animation-name: circle_spin;
+    animation-duration: 6s;
+    animation-delay: 6s;
+    border-radius: 100%;
+}
+.circle_one_part_i{
+    height: 200px;
+    align-items: center;
+    width: 450px;
+   
+}
+.circle_one_part_i_text, .circle_two_part_i_text, .circle_three_part_i_text{
+    padding: 50px 0 0 150px;
+}
+.circle_one_part_ii{
+    background-image: url("1.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 450px;
+}
+.play1, .play2, .play3{
+    background-color: rgb(146,205,0);
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    margin: 110px 0 0 170px;
+    border-radius: 100%;
+}
+.play1:hover, .play2:hover, .play3:hover{
+    opacity: 0.4;
+    cursor: pointer;
+}
+.play1 i{
+    padding: 25px 15px;
+}
+.play2 i{
+    padding: 25px 15px;
+}
+.play3 i{
+    padding: 25px 15px;
+}
+@keyframes circle_spin{
+    0%{
+        transform: rotate(30deg);
+        opacity: 0;
+    }
+    100%{
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
+.circle_two_part_i{
+    height: 200px;
+    width: 450px;
+}
+.circle_two_part_ii{
+    background-image: url("2.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 450px;
+}
+.circle_three_part_i{
+    height: 200px;
+    width: 450px;
+}
+.circle_three_part_ii{
+    background-image: url("3.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 450px;
+}
+.third{
+    background-image: url("3.jpg");
+    height: 100vh;
+    width: 100%;
+    position: sticky;
+
+    
+    z-index: -99;
+    top: 40px;
+}
+.five{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+}
+.five_one{
+    height: 89vh;
+    width: 440px;
+    background-color: rgb(23,48,88);
+    padding: 50px;
+}
+.five_one img{
+    height: 70px;
+}
+.five button{
+    height: 60px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: rgb(146,205,0);
+    color: white;
+    border: none;
+    outline: none;
+}
+.five button:hover{
+    background-color: black;
+}
+.five_two{
+    height: 89vh;
+    width: 600px;
+    padding: 50px;
+    background-color: rgb(27,58,105);
+    text-align: center;
+}
+.five_two img{
+    height: 70px;
+}
+.five_three{
+    height: 89vh;
+    background-color: rgb(23,48,88);
+    width: 500px;
+    padding: 50px;
+    text-align: right;
+}
+.five p{
+    color: white;
+}
+.five_three img{
+    height: 50px;
+}
+.six h1{
+    color: rgb(23,48,88);
+}
+.six h3,p{
+    color: rgb(161,166,188);
+}
+.six button{
+    height: 50px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: rgb(146,205,0);
+    color: white;
+    border: none;
+    outline: none;
+    margin: 0 0 0 450px;
+}
+.six button:hover{
+    background-color: black;
+}
+@keyframes six{
+    0%{
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+.six img{
+    animation-name: six;
+    animation-duration: 5s;
+}
+main img{
+    height: 45px;
+    position: fixed;
+    right: 0;
+    top: 400px;
+    background-color: white;
+    border-radius: 100%;
+}
